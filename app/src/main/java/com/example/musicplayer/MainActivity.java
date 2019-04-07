@@ -23,6 +23,7 @@ import static com.example.musicplayer.MusicListActivity.playSong;
 public class MainActivity extends AppCompatActivity {
     Button playBtn;
     SeekBar positionBar;
+
     SeekBar volumeBar;
     TextView elapsedTimeLabel;
     TextView remainingTimeLabel;
