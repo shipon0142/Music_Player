@@ -115,6 +115,7 @@ public class MusicListActivity extends AppCompatActivity {
         } else {
 
             int Title = cursor.getColumnIndex(MediaStore.Audio.Media.TITLE);
+            int singer = cursor.getColumnIndex(MediaStore.Audio.Media.ARTIST);
             int column_index = cursor.getColumnIndexOrThrow(MediaStore.Audio.Media.DATA);
 
 
@@ -125,18 +126,18 @@ public class MusicListActivity extends AppCompatActivity {
 
                 // You can also get the Song ID using cursor.getLong(id).
                 //long SongID = cursor.getLong(id);
-//String PATH=cursor.
+                //String PATH=cursor.
                 String path = cursor.getString(column_index);
                 String SongTitle = cursor.getString(Title);
+                String artist = cursor.getString(singer);
 
                 // Adding Media File Names to ListElementsArrayList.
                 ListElementsArrayList.add(SongTitle);
-                songs.add(new Song(SongTitle,path));
+                songs.add(new Song(SongTitle,path,artist));
 
             } while (cursor.moveToNext());
         }
     }
-
     // Creating Runtime permission function.
     public void AndroidRuntimePermission() {
 

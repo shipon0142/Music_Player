@@ -40,15 +40,7 @@ public class MainActivity extends AppCompatActivity {
         elapsedTimeLabel = (TextView) findViewById(R.id.elapsedTimeLabel);
         remainingTimeLabel = (TextView) findViewById(R.id.remainingTimeLabel);
         mp=MediaPlayer.create(this, Uri.parse(playSong.getPath()));
-       /* try {
-            playSong(music[4]);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
-       // mMusicList = getMusic();
-        // Media Player
-        //mp = MediaPlayer.create(this, R.raw.music);
-       // mp=MediaPlayer.create(this,R.raw.music);
+
         mp.setLooping(true);
         mp.seekTo(0);
         mp.setVolume(0.5f, 0.5f);
