@@ -10,12 +10,14 @@
         android:orientation="horizontal">
 
         <ImageView
+            android:visibility="invisible"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:src="@drawable/ic_share"
           />
 
         <ImageView
+            android:visibility="invisible"
             android:layout_width="16dp"
             android:layout_height="16dp"
             android:src="@drawable/ic_menu"

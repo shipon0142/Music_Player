@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.musicplayer.MusicActivity">
+    tools:context="com.music.musicplayer.MusicActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -27,7 +27,6 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/roboto_medium"
                 android:paddingLeft="28dp"
-                android:text="Look What You Made Me Do"
                 android:textColor="#ffffff"
                 android:textSize="17dp" />
 
@@ -38,7 +37,6 @@
                 android:layout_marginTop="6dp"
                 android:fontFamily="@font/roboto"
                 android:paddingLeft="28dp"
-                android:text="Taylor Swift"
                 android:textColor="#ffffff"
                 android:textSize="13dp" />
 
@@ -80,7 +78,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/roboto"
                     android:paddingLeft="26dp"
-                    android:text="1:58"
+                    android:text="0:00"
                     android:textColor="#ffffff"
                     android:textSize="10dp" />
 
@@ -92,7 +90,7 @@
                     android:fontFamily="@font/roboto"
                     android:gravity="end"
                     android:paddingRight="26dp"
-                    android:text="3:12"
+                    android:text="0.00"
                     android:textColor="#ffffff"
                     android:textSize="10dp" />
             </LinearLayout>
@@ -110,6 +108,7 @@
         android:orientation="horizontal">
 
         <ImageView
+            android:visibility="invisible"
             android:layout_width="match_parent"
             android:layout_height="18dp"
             android:layout_gravity="center"
@@ -118,6 +117,7 @@
             android:src="@drawable/ic_repeat" />
 
         <ImageView
+            android:id="@+id/PrevIV"
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:layout_gravity="center"
@@ -138,6 +138,7 @@
             android:src="@drawable/ic_play" />
 
         <ImageView
+            android:id="@+id/NextIV"
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:layout_gravity="center"
@@ -146,6 +147,7 @@
             android:src="@drawable/ic_forward" />
 
         <ImageView
+            android:visibility="invisible"
             android:layout_width="match_parent"
             android:layout_height="18dp"
             android:layout_gravity="center"
